@@ -113,21 +113,145 @@ console.log(arr)
 // let first = ages[9] - ages[0]
 // console.log(first)
 
-for (let i = 0; i <= 5; i++ ) {
-    console.log(i)
+// for (let i = 0; i <= 5; i++ ) {
+//     console.log(i)
+// }
+
+// for (let i = 0; i <= 10; i++ ) {
+//     console.log(i)
+// }
+// for (let i = 0; i <=10; i ++){
+//     // console.log('${i} * ${i} = ${i * i}' )
+//     console.log(i)
+// }
+
+// const numbers = [1,2,3,4,5]
+// let sum = 5
+// for (let i = 0; i < numbers.length; i++){
+//     sum += numbers[i]
+//     console.log(sum)
+// }
+
+// const letter = "Udacity"
+//  for (let i = 0; i < letter.length; i++){
+// console.log(letter.charCodeAt(i));}
+
+// const answer = "ALL Strings are CrEaTeD equal" == "ALL STRINGS are CrEaTED Equal"
+// console.log(answer)
+
+// const studentName ="Wale";
+// const haveEnrolledInCourse = true;
+// const haveCompletedTheCourse = false;
+
+// if (haveEnrolledInCourse){
+//     console.log(" Welcome, " + studentName +" to Udacity!" )
+// }
+/*
+ * Programming Quiz: What do I Wear?
+ *
+ * Using if/else statements, create a series of logical expressions that logs the size of a t-shirt based on the measurements of:
+ *   - shirtWidth
+ *   - shirtLength
+ *   - shirtSleeve
+ *
+ * Use the chart above to print out one of the following correct values:
+ *   - S, M, L, XL, 2XL, or 3XL
+ */
+
+/*
+ * QUIZ REQUIREMENTS
+ * 1. Your code should have the variables `shirtWidth`, `shirtLength`, and `shirtSleeve`
+ * 2. Your code should include an `if...else` conditional statement
+ * 3. Your code should use logical expressions
+ * 4. Your code should produce the expected output.
+ */
+ 
+
+
+// change the values of `shirtWidth`, `shirtLength`, and `shirtSleeve` to test your code
+const shirtWidth = 23;
+const shirtLength = 30;
+const shirtSleeve = 8.71;
+
+// your code goes here
+let size = "N/A"
+if ((shirtWidth >=18 && shirtWidth <=26) && (shirtLength >=28 && shirtLength <=33) && (shirtSleeve >= 8.13 && shirtSleeve<=9.63)){
+  size = "S"
+}
+else if ((shirtWidth >=27.99 && shirtWidth <=28) && (shirtLength >=33 && shirtLength <=33.99) && (shirtSleeve >= 10.2 && shirtSleeve<=11.35)){
+size = "L"
+}
+else if ((shirtWidth >=29.99 && shirtWidth <=30) && (shirtLength >=35 && shirtLength <=36.99) && (shirtSleeve >= 16.2 && shirtSleeve<=19.35)){
+size = "M"
+}
+else {
+size = "N/A"
+}
+console.log(size)
+
+if ("") {
+    console.log("the value is truthy");
+} else {
+    console.log("the value is falsy");
 }
 
-for (let i = 0; i <= 10; i++ ) {
-    console.log(i)
-}
-for (let i = 0; i <=10; i ++){
-    // console.log('${i} * ${i} = ${i * i}' )
-    console.log(i)
+if(17)
+    console.log("This text will be printed if the condition above evaluates to true");
+
+    const isGoing = true;
+const color =red;
+
+if (isGoing) {
+  color = "green";
+} else {
+  color = "red";
 }
 
-const numbers = [1,2,3,4,5]
-let sum = 5
-for (let i = 0; i < numbers.length; i++){
-    sum += numbers[i]
-    console.log(sum)
+console.log(color);
+
+/*
+ * Programming Quiz: Back to School
+ *
+ * Write a switch statement to set the average salary of a person based on their type of completed education.
+ *
+ */
+
+/*
+ * QUIZ REQUIREMENTS
+ * - Your code should have the variables `education`, and `salary`
+ * - Your code should include a switch statement
+ * - Your code should produce the expected output
+ */
+ 
+// change the value of `education` to test your code
+const education = "no high school diploma";
+
+// set the value of this based on a person's education
+let salary = 0;
+
+// your code goes here
+switch (education){
+  case "high school diploma" :
+  salary = 35256;
+  break;
+  case "high school diploma":
+        salary = 35256;
+        break;
+    case "Associate's degree":
+        salary = 41496;
+        break;
+    case "Bachelor's degree":
+        salary = 59124;
+        break;
+    case "Master's degree":
+        salary = 69732;
+        break;
+    case "Professional degree":
+        salary = 89960;
+        break;
+    case "Doctoral degree":
+        salary = 84396;
+        break;
 }
+console.log("In 2015, a person with "+education+" earned an average of $"+salary.toLocaleString("en-US")+"/year.");
+
